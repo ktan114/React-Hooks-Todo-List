@@ -9,6 +9,7 @@ function TodoForm({ saveTodo }) {
         onSubmit={e => {
           e.preventDefault();
           saveTodo(value);
+          setValue('');
         }}
       >
         <TextField
